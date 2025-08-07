@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Profunda: Superando Barreiras para uma Vida Espiritual Plena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0A2342; /* Azul escuro */
+            --secondary-color: #FFD700; /* Dourado */
+            --accent-color: #DC3545; /* Vermelho para urgência */
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --dark-bg: #e9ecef;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: var(--primary-color);
+        }
+
+        .headline, .sub-headline {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .headline h1 {
+            font-size: 3em;
+            line-height: 1.2;
+            color: var(--primary-color);
+        }
+
+        .sub-headline p {
+            font-size: 1.3em;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .problem-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .problem-section ul li {
+            background: var(--dark-bg);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+
+        .problem-section ul li::before {
+            content: '✓';
+            color: green;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .agitation-section {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .agitation-section h3 {
+            color: var(--secondary-color);
+        }
+
+        .agitation-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .agitation-section ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .agitation-section ul li::before {
+            content: '🔸';
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+
+        .solution-section .ebook-cover {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .solution-section .ebook-cover img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .chapter-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .chapter-list ul li {
+            background: var(--dark-bg);
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1.05em;
+            display: flex;
+            align-items: center;
+        }
+
+        .chapter-list ul li::before {
+            content: '📖';
+            margin-right: 10px;
+        }
+
+        .benefits-section ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .benefits-section ul li {
+            background: var(--dark-bg);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .benefits-section ul li strong {
+            display: block;
+            font-size: 1.3em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .benefits-section ul li::before {
+            content: '🎯';
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .credibility-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .credibility-section ul li {
+            background: var(--dark-bg);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+
+        .credibility-section ul li::before {
+            content: '✅';
+            color: green;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .urgency-section {
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .urgency-section h3 {
+            color: #fff;
+            font-size: 1.8em;
+        }
+
+        .urgency-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .urgency-section ul li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .urgency-section ul li::before {
+            content: '⏰';
+            margin-right: 10px;
+        }
+
+        .offer-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--light-bg);
+            border-radius: 8px;
+            border: 2px dashed var(--secondary-color);
+        }
+
+        .offer-section .price-old {
+            font-size: 1.5em;
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .offer-section .price-new {
+            font-size: 3em;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .offer-section .bonus-list ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .offer-section .bonus-list ul li {
+            background: #fff;
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .offer-section .bonus-list ul li::before {
+            content: '🎁';
+            margin-right: 10px;
+        }
+
+        .guarantee-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            border: 2px solid var(--primary-color);
+        }
+
+        .guarantee-section h3 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+        }
+
+        .guarantee-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .guarantee-section .icon {
+            font-size: 3em;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            display: block;
+            width: 80%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px 30px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-size: 1.8em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #FFC107; /* Um dourado um pouco mais claro */
+            transform: translateY(-3px);
+        }
+
+        .cta-details ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta-details ul li {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .cta-details ul li::before {
+            content: '✅';
+            margin-right: 5px;
+        }
+
+        .faq-section .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-section .faq-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+            font-size: 1.1em;
+        }
+
+        .scarcity-section {
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .scarcity-section span {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.8em;
+            font-weight: normal;
+        }
+
+        .final-cta-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .final-cta-section .options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .final-cta-section .option {
+            flex: 1;
+            min-width: 280px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: var(--dark-bg);
+        }
+
+        .final-cta-section .option h4 {
+            color: var(--primary-color);
+            font-size: 1.4em;
+        }
+
+        .final-cta-section .option ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .final-cta-section .option ul li {
+            margin-bottom: 5px;
+        }
+
+        .final-cta-section .option.transform h4 {
+            color: green;
+        }
+
+        .final-cta-section .option.transform ul li::before {
+            content: '✅';
+            margin-right: 5px;
+            color: green;
+        }
+
+        .final-cta-section .option.continue ul li::before {
+            content: '❌';
+            margin-right: 5px;
+            color: var(--accent-color);
+        }
+
+        .jeremias-quote {
+            text-align: center;
+            font-style: italic;
+            margin-top: 40px;
+            padding: 20px;
+            background: var(--dark-bg);
+            border-left: 5px solid var(--secondary-color);
+            font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.7em;
+            }
+            .headline h1 {
+                font-size: 2.5em;
+            }
+            .sub-headline p {
+                font-size: 1.1em;
+            }
+            .cta-button {
+                font-size: 1.5em;
+                padding: 15px 20px;
+            }
+            .benefits-section ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="headline">
+                <h1>Você já se perguntou por que, mesmo após décadas de fé, ainda sente que algo está faltando em sua vida espiritual?</h1>
+            </div>
+            <div class="sub-headline">
+                <p>Descubra como superar as barreiras invisíveis que impedem uma conexão mais profunda com Deus e transforme sua caminhada cristã em uma jornada de intimidade genuína e propósito renovado.</p>
+            </div>
+        </header>
+
+        <section class="problem-section">
+            <h2>Você se reconhece em alguma dessas situações?</h2>
+            <ul>
+                <li>Sente que sua vida de oração se tornou mecânica e sem vida, mesmo orando há anos?</li>
+                <li>Lê a Bíblia regularmente, mas raramente sente que ela "fala" com você como costumava falar?</li>
+                <li>Participa ativamente de comunidades cristãs online, mas se sente espiritualmente vazio por dentro?</li>
+                <li>Tem décadas de caminhada cristã, mas sente que estagnou espiritualmente?</li>
+                <li>Luta para equilibrar sua fé digital com uma experiência autêntica de comunhão com Deus?</li>
+                <li>Passa por períodos de "secura espiritual" e não sabe como atravessá-los?</li>
+                <li>Deseja uma vida espiritual mais profunda, mas não sabe por onde começar a renovar sua fé?</li>
+            </ul>
+            <p style="text-align: center; font-weight: bold; font-size: 1.2em;">Se você respondeu "sim" a pelo menos uma dessas perguntas, você não está sozinho. E mais importante: <strong>existe uma solução</strong>.</p>
+        </section>
+
+        <section class="agitation-section">
+            <h3>A Verdade Que Ninguém Fala Sobre a Vida Espiritual Madura</h3>
+            <p>Depois de anos ou décadas caminhando com Cristo, muitos cristãos sinceros enfrentam um paradoxo doloroso: <strong>quanto mais tempo passam na fé, mais distantes de Deus se sentem</strong>.</p>
+            <ul>
+                <li>A era digital criou novas barreiras que nossos pais na fé nunca enfrentaram. Somos bombardeados por distrações constantes que fragmentam nossa atenção e dificultam a contemplação profunda.</li>
+                <li>Práticas espirituais que funcionavam no passado podem ter se tornado rotineiras e perdido seu poder transformador, deixando-nos presos em uma "religiosidade automática".</li>
+                <li>As redes sociais criaram uma "espiritualidade performática" onde compartilhamos mais sobre nossa fé do que realmente a vivemos em profundidade.</li>
+                <li>Ninguém nos ensinou como adaptar nossa vida espiritual às mudanças naturais que vêm com a maturidade, limitações físicas e novas responsabilidades.</li>
+                <li>Períodos de aridez espiritual são tratados como falhas pessoais em vez de partes normais e até necessárias da jornada de fé.</li>
+            </ul>
+            <p style="text-align: center; font-weight: bold; font-size: 1.2em;">O resultado? Cristãos fiéis que se sentem culpados por sua "falta de fervor", confusos sobre por que Deus parece distante, e desesperançosos sobre a possibilidade de renovação espiritual.</p>
+            <p style="text-align: center; font-weight: bold; font-size: 1.5em; color: var(--secondary-color);">Mas não precisa ser assim.</p>
+        </section>
+
+        <section class="solution-section">
+            <h2>Apresentando "Conexão Profunda"</h2>
+            <p style="text-align: center; font-size: 1.3em; font-weight: bold;"><strong>Um guia prático e transformador para cristãos maduros que desejam superar as barreiras invisíveis e redescobrir a intimidade genuína com Deus.</strong></p>
+            <p style="text-align: center;">Este não é mais um livro de "dicas espirituais" superficiais. É um mapa detalhado, baseado em princípios bíblicos sólidos e sabedoria testada pelo tempo, que o guiará através de uma jornada de renovação espiritual autêntica.</p>
+
+            <div class="ebook-cover">
+                <img src="capa_ebook_final.png" alt="Capa do E-book Conexão Profunda">
+            </div>
+
+            <h3>O Que Você Descobrirá:</h3>
+            <div class="chapter-list">
+                <ul>
+                    <li><strong>Capítulo 1: Reconhecendo os Obstáculos da Vida Espiritual Moderna</strong><br>Como a era digital está sabotando sua vida devocional (e o que fazer sobre isso); Os desafios específicos que cristãos de meia-idade e idade avançada enfrentam; Por que sua participação em comunidades online pode estar impedindo sua intimidade com Deus.</li>
+                    <li><strong>Capítulo 2: Fundamentos Bíblicos para uma Vida Devocional Consistente</strong><br>Princípios atemporais que sustentaram santos ao longo dos séculos; Como aplicar verdades antigas em seu contexto contemporâneo; Exemplos bíblicos de pessoas que mantiveram intimidade com Deus em todas as circunstâncias.</li>
+                    <li><strong>Capítulo 3: Redescobrindo o Poder da Oração</strong><br>Por que sua oração se tornou "seca" e como revitalizá-la; Diferentes formas de oração para diferentes momentos da vida; Como desenvolver uma linguagem de oração pessoal e autêntica.</li>
+                    <li><strong>Capítulo 4: A Palavra Viva no Cotidiano</strong><br>Como superar a leitura bíblica mecânica e sem propósito; Métodos de estudo adaptados para seu estilo de aprendizagem; Estratégias para aplicar a Palavra em situações concretas do dia a dia.</li>
+                    <li><strong>Capítulo 5: Cultivando Disciplinas Espirituais na Maturidade</strong><br>Como adaptar práticas espirituais para limitações físicas ou de tempo; O valor das disciplinas clássicas no mundo contemporâneo; Abordagens equilibradas para jejum e outras disciplinas corporais.</li>
+                    <li><strong>Capítulo 6: Da Comunidade Virtual para a Comunhão Autêntica</strong><br>Como equilibrar participação digital e presencial na igreja; Estratégias para construir relacionamentos que realmente nutrem sua fé; Como ser sal e luz nas plataformas digitais sem perder a autenticidade.</li>
+                    <li><strong>Capítulo 7: Superando Crises de Fé e Períodos de Aridez Espiritual</strong><br>Por que os "desertos espirituais" são normais e até necessários; Estratégias comprovadas para atravessar períodos de dúvida e desânimo; Como encontrar propósito e renovação após as crises.</li>
+                    <li><strong>Capítulo 8: Plano de Ação para uma Vida Espiritual Renovada</strong><br>Avaliação pessoal: onde você está e onde quer chegar; Como estabelecer metas espirituais realistas e mensuráveis; Criando rotinas sustentáveis que se adaptam à sua vida atual.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <h2>O Que Você Ganhará Com Este E-book:</h2>
+            <ul>
+                <li><strong>CLAREZA ESPIRITUAL</strong><br>Finalmente entenda por que sua vida espiritual estagnou e tenha um caminho claro para a renovação.</li>
+                <li><strong>PRÁTICAS TRANSFORMADORAS</strong><br>Descubra disciplinas espirituais adaptadas para sua realidade atual, não para um ideal impossível.</li>
+                <li><strong>RELACIONAMENTO AUTÊNTICO COM DEUS</strong><br>Saia da "religiosidade automática" e entre em uma intimidade genuína e vibrante com o Senhor.</li>
+                <li><strong>EQUILÍBRIO DIGITAL SAUDÁVEL</strong><br>Aprenda a usar a tecnologia para fortalecer sua fé, não para enfraquecê-la.</li>
+                <li><strong>RESILIÊNCIA ESPIRITUAL</strong><br>Desenvolva a capacidade de manter sua fé forte mesmo em períodos de dificuldade e aridez.</li>
+                <li><strong>PROPÓSITO RENOVADO</strong><br>Redescubra seu chamado e como sua maturidade espiritual pode impactar outros.</li>
+                <li><strong>COMUNIDADE SIGNIFICATIVA</strong><br>Construa relacionamentos que realmente nutrem e desafiam sua fé.</li>
+                <li><strong>PLANO PERSONALIZADO</strong><br>Saia da leitura com um plano de ação concreto e adaptado à sua situação específica.</li>
+            </ul>
+        </section>
+
+        <section class="credibility-section">
+            <h2>Por Que Este E-book é Diferente?</h2>
+            <ul>
+                <li><strong>BASEADO EM FUNDAMENTOS BÍBLICOS SÓLIDOS</strong><br>Cada princípio e prática é fundamentado na Escritura, não em modismos espirituais passageiros.</li>
+                <li><strong>FOCADO NO SEU PÚBLICO ESPECÍFICO</strong><br>Criado especificamente para cristãos de meia-idade e idade avançada, considerando seus desafios únicos.</li>
+                <li><strong>PRÁTICO E APLICÁVEL</strong><br>Não são apenas teorias, mas estratégias testadas que você pode implementar imediatamente.</li>
+                <li><strong>HONESTO SOBRE AS DIFICULDADES</strong><br>Não promete soluções mágicas, mas oferece caminhos reais para crescimento genuíno.</li>
+                <li><strong>EQUILIBRADO E MADURO</strong><br>Evita extremos e oferece uma abordagem equilibrada para a vida espiritual.</li>
+            </ul>
+        </section>
+
+        <section class="urgency-section">
+            <h3>Por Que Agir Agora?</h3>
+            <ul>
+                <li>Cada dia que passa sem renovação espiritual é um dia perdido de intimidade mais profunda com Deus.</li>
+                <li>Quanto mais você adia, mais difícil fica quebrar padrões espirituais estagnados.</li>
+                <li>Sua família e comunidade precisam do exemplo de uma fé vibrante e autêntica.</li>
+                <li>Deus tem propósitos específicos para esta estação de sua vida que você pode estar perdendo.</li>
+                <li>O tempo é o recurso mais precioso que você tem - invista-o em seu crescimento espiritual.</li>
+            </ul>
+        </section>
+
+        <section class="offer-section">
+            <h2>Sua Transformação Espiritual Começa Hoje</h2>
+            <p class="price-old">De: R$ 97,00</p>
+            <p class="price-new">Por apenas: R$ 47,00</p>
+
+            <h3>O Que Está Incluído:</h3>
+            <div class="bonus-list">
+                <ul>
+                    <li><strong>📚 E-book "Conexão Profunda" (PDF)</strong><br>8 capítulos completos, Mais de 200 páginas de conteúdo transformador, Exercícios práticos ao final de cada capítulo, Plano de ação personalizado.</li>
+                    <li><strong>🎁 Bônus #1: Guia de Oração para 30 Dias (Valor: R$ 27)</strong><br>Um guia prático com diferentes métodos de oração para renovar sua vida de oração em apenas um mês.</li>
+                    <li><strong>🎁 Bônus #2: Planos de Leitura Bíblica Adaptáveis (Valor: R$ 19)</strong><br>Três planos diferentes de leitura bíblica que se adaptam à sua rotina e estilo de vida.</li>
+                    <li><strong>🎁 Bônus #3: Lista de Recursos Espirituais Recomendados (Valor: R$ 15)</strong><br>Uma curadoria de livros, aplicativos, podcasts e recursos online para apoiar sua jornada espiritual.</li>
+                </ul>
+            </div>
+            <p style="font-size: 1.5em; font-weight: bold; margin-top: 20px;">VALOR TOTAL: R$ 158</p>
+            <p style="font-size: 2em; font-weight: bold; color: var(--accent-color);">SEU INVESTIMENTO HOJE: APENAS R$ 47</p>
+        </section>
+
+        <section class="guarantee-section">
+            <div class="icon">🛡️</div>
+            <h3>Garantia Incondicional de 30 Dias</h3>
+            <p><strong>Estamos tão confiantes de que "Conexão Profunda" transformará sua vida espiritual que oferecemos uma garantia total de 30 dias.</strong></p>
+            <p>Se por qualquer motivo você não ficar completamente satisfeito com o conteúdo, basta enviar um e-mail e devolvemos 100% do seu investimento, sem perguntas.</p>
+            <p style="font-weight: bold; font-size: 1.2em;">Você não tem nada a perder e uma vida espiritual renovada a ganhar.</p>
+        </section>
+
+        <section class="call-to-action-section">
+            <h2>Sua Jornada de Renovação Espiritual Começa Agora</h2>
+            <p style="text-align: center; font-size: 1.2em;">
+                <strong>Não deixe que mais um dia passe vivendo uma fé medíocre.</strong><br>
+                <strong>Não permita que as barreiras invisíveis continuem impedindo sua intimidade com Deus.</strong><br>
+                <strong>Não aceite que sua melhor época espiritual já passou.</strong>
+            </p>
+            <p style="text-align: center; font-size: 1.5em; font-weight: bold; color: var(--primary-color);">Sua renovação espiritual está a apenas um clique de distância.</p>
+
+            <a href="#" class="cta-button">🔥 OFERTA ESPECIAL - APENAS POR TEMPO LIMITADO 🔥<br>CLIQUE NO BOTÃO ABAIXO E GARANTA SEU ACESSO IMEDIATO</a>
+
+            <div class="cta-details">
+                <ul>
+                    <li>Acesso imediato após a compra</li>
+                    <li>Download em PDF para ler em qualquer dispositivo</li>
+                    <li>Garantia incondicional de 30 dias</li>
+                    <li>Todos os bônus inclusos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <strong>P: Este e-book é adequado para minha denominação?</strong>
+                <p>R: Sim! O conteúdo é baseado em princípios bíblicos universais que se aplicam a todas as denominações cristãs. Evitamos questões doutrinárias controversas e focamos no que une todos os cristãos: o desejo de conhecer a Deus mais profundamente.</p>
+            </div>
+            <div class="faq-item">
+                <strong>P: Preciso de conhecimento teológico avançado para entender?</strong>
+                <p>R: Não! O e-book foi escrito em linguagem acessível para cristãos de todos os níveis de conhecimento bíblico. Explicamos conceitos quando necessário e focamos na aplicação prática.</p>
+            </div>
+            <div class="faq-item">
+                <strong>P: Quanto tempo preciso dedicar para ver resultados?</strong>
+                <p>R: Muitos leitores relatam insights significativos já na primeira leitura. No entanto, a transformação espiritual é um processo. Recomendamos dedicar pelo menos 15-20 minutos diários às práticas sugeridas para ver mudanças duradouras.</p>
+            </div>
+            <div class="faq-item">
+                <strong>P: E se eu tiver limitações físicas ou de saúde?</strong>
+                <p>R: O e-book inclui adaptações específicas para pessoas com limitações físicas, problemas de mobilidade ou condições de saúde. Todas as práticas podem ser modificadas conforme suas necessidades.</p>
+            </div>
+            <div class="faq-item">
+                <strong>P: Como recebo o e-book após a compra?</strong>
+                <p>R: Imediatamente após a confirmação do pagamento, você receberá um e-mail com o link para download do e-book em PDF e todos os bônus.</p>
+            </div>
+            <div class="faq-item">
+                <strong>P: A garantia é real?</strong>
+                <p>R: Absolutamente! Oferecemos 30 dias de garantia incondicional. Se não ficar satisfeito por qualquer motivo, devolvemos 100% do seu investimento.</p>
+            </div>
+        </section>
+
+        <section class="scarcity-section">
+            ⚠️ ATENÇÃO: Esta Oferta Especial é Por Tempo Limitado
+            <span>O preço promocional de R$ 47 (em vez de R$ 97) é válido apenas para os primeiros 100 exemplares.</span>
+            <span>Após isso, o e-book retornará ao preço normal.</span>
+            <span>Não perca esta oportunidade de transformar sua vida espiritual com um investimento mínimo.</span>
+        </section>
+
+        <section class="final-cta-section">
+            <h2>Sua Decisão Determinará os Próximos Anos da Sua Vida Espiritual</h2>
+            <div class="options">
+                <div class="option continue">
+                    <h4>Você pode continuar como está:</h4>
+                    <ul>
+                        <li>Sentindo-se espiritualmente estagnado</li>
+                        <li>Lutando com práticas devocionais sem vida</li>
+                        <li>Questionando se sua melhor época espiritual já passou</li>
+                        <li>Perdendo oportunidades de intimidade genuína com Deus</li>
+                    </ul>
+                </div>
+                <div class="option transform">
+                    <h4>Ou pode escolher a transformação:</h4>
+                    <ul>
+                        <li>Redescobrindo a alegria da comunhão com Deus</li>
+                        <li>Desenvolvendo práticas espirituais vibrantes e sustentáveis</li>
+                        <li>Encontrando propósito renovado em sua jornada de fé</li>
+                        <li>Tornando-se um exemplo de maturidade espiritual para outros</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="font-size: 1.5em; font-weight: bold; color: var(--primary-color); margin-top: 30px;">A escolha é sua. O momento é agora.</p>
+
+            <a href="#" class="cta-button">QUERO TRANSFORMAR MINHA VIDA ESPIRITUAL - R$ 47</a>
+
+            <div class="jeremias-quote">
+                <p>"Porque eu sei os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de causar dano, planos de dar a vocês esperança e um futuro." - Jeremias 29:11</p>
+                <p><strong>Deus tem planos de renovação para sua vida espiritual. Este e-book pode ser o primeiro passo para descobri-los.</strong></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Conexão Profunda. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
